@@ -8,8 +8,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      NGROK_TOKEN: YOUR-NGROK-TOKEN-HERE
-      PASSWORD: Secret123
+      NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
+      PASSWORD: ${{ secrets.PASSWORD }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up RDP and SSH
