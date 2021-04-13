@@ -8,8 +8,8 @@ jobs:
   build:
     runs-on: windows-latest
     env:
-      NGROK_TOKEN: YOUR-NGROK-TOKEN-HERE
-      RDP_PASSWORD: Secret123
+      NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
+      RDP_PASSWORD: ${{ secrets.PASSWORD }}
     steps:
     - uses: actions/checkout@v2
     - name: Set up RDP
