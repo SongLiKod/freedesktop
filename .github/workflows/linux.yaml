@@ -6,7 +6,7 @@ defaults:
     shell: bash
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: centos-latest
     env:
       NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
       PASSWORD: ${{ secrets.PASSWORD }}
