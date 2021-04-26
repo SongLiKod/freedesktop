@@ -15,7 +15,6 @@ jobs:
     - name: Set up RDP and SSH
       run: |
         sudo snap install ngrok
-        sudo apt install xfce4 xfce4-goodies xorg dbus-x11 x11-xserver-utils xrdp
         sudo adduser xrdp ssl-cert
         sudo systemctl restart xrdp
         echo "runner:$PASSWORD" | sudo chpasswd
